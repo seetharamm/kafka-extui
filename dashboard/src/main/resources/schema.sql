@@ -1,0 +1,47 @@
+DROP TABLE IF EXISTS KBD_TOPICS;
+ 
+CREATE TABLE KBD_TOPICS (
+  id INT AUTO_INCREMENT  PRIMARY KEY,
+  topic_name VARCHAR(250) NOT NULL,
+  created_by VARCHAR(250) NOT NULL,
+  created_date DATETIME DEFAULT NULL,
+  topic_desc VARCHAR(250) NOT NULL,
+  modified_by VARCHAR(250) NOT NULL,
+  modified_date DATETIME DEFAULT NULL,
+  number_of_partitions INT NOT NULL,
+  replication_factor INT NOT NULL
+);
+CREATE TABLE KBD_PRODUCERS (
+  id INT AUTO_INCREMENT  PRIMARY KEY,
+  producer_name VARCHAR(250) NOT NULL,
+  register_by VARCHAR(250) NOT NULL,
+  register_date DATETIME NOT NULL,
+  de_register_by VARCHAR(250) DEFAULT NULL,
+  de_register_date DATETIME DEFAULT NULL,
+  app_name VARCHAR(250) NOT NULL,
+  modified_by VARCHAR(250) NOT NULL,
+  modified_date DATETIME NOT NULL
+);
+CREATE TABLE KBD_CONSUMERS (
+  id INT AUTO_INCREMENT  PRIMARY KEY,
+  consumer_name VARCHAR(250) NOT NULL,
+  register_by VARCHAR(250) NOT NULL,
+  consume_from VARCHAR(250) NOT NULL,
+  end_point VARCHAR(250) NOT NULL,
+  register_date VARCHAR(250) NOT NULL,
+  de_register_by VARCHAR(250) NOT NULL,
+  de_register_date DATETIME DEFAULT NULL,
+  app_name VARCHAR(250) NOT NULL,
+  modified_by VARCHAR(250) NOT NULL,
+  modified_date DATETIME DEFAULT NULL
+);
+CREATE TABLE KBD_DLQ (
+  id INT AUTO_INCREMENT  PRIMARY KEY,
+  payload VARCHAR(250) NOT NULL,
+  consumer_name VARCHAR(250) NOT NULL,
+  error_msg VARCHAR(250) DEFAULT NULL,
+  failed_date DATETIME NOT NULL,
+  processed_date DATETIME DEFAULT NULL
+  
+);
+
