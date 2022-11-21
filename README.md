@@ -13,7 +13,7 @@ Build mvn clean install
 Ui implemented with extjs. you can run both with tomcat or wildify (jboss) (java services and ext ui through war files)
 
 
-![image](https://user-images.githubusercontent.com/41895101/203134312-8f50a567-db98-4942-8c03-09a3f60859ac.png)
+
 
 
 
