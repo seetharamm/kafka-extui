@@ -11,3 +11,19 @@ Requirements Java 8 or newer Kafka (2XXX ) spring-boot 2.7.5
 Build mvn clean install
 
 Ui implemented with extjs. you can run both with tomcat or wildify (jboss) (java services and ext ui through war files)
+
+
+![image](https://user-images.githubusercontent.com/41895101/203134312-8f50a567-db98-4942-8c03-09a3f60859ac.png)
+
+
+
+
+
+![image](https://user-images.githubusercontent.com/41895101/203134694-350fffee-c3cb-45de-8636-2233ead63089.png)
+
+
+
+![image](https://user-images.githubusercontent.com/41895101/203135235-175a4fbc-b8c6-4fde-b08b-7412cbe8aba1.png)
+
+
+
