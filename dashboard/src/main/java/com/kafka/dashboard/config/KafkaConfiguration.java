@@ -67,6 +67,6 @@ public final class KafkaConfiguration {
  
 
   public void applyCommon(Properties properties) {
-    properties.setProperty(CommonClientConfigs.BOOTSTRAP_SERVERS_CONFIG, "http://awsria141.rdcloud.bms.com:9092");
+    properties.setProperty(CommonClientConfigs.BOOTSTRAP_SERVERS_CONFIG, "*******");
     }
 }
