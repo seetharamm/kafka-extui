@@ -13,7 +13,7 @@ public class EmailConfiguration {
 	public JavaMailSender javaMialService()
 	{
 		JavaMailSenderImpl javaMailSender = new JavaMailSenderImpl();
-		javaMailSender.setHost("no-reply@bms.com");
+		javaMailSender.setHost("no-reply@***.com");
 		return javaMailSender;
 	}
 }

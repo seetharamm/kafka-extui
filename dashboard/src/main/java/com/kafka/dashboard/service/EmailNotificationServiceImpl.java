@@ -27,7 +27,7 @@ public class EmailNotificationServiceImpl {
 	
 	public void sendmail() throws AddressException, MessagingException, IOException {
 	     String subject = "hhhhh";
-	String sendFrom = "no-reply@bms.com";
+	String sendFrom = "no-reply@**.com";
 
 	MimeMessagePreparator preparator = new MimeMessagePreparator() {
 	@Override
@@ -37,7 +37,7 @@ public class EmailNotificationServiceImpl {
 	message = new MimeMessageHelper(mimeMessage, true, "UTF-8");
 	message.setSubject(subject);
 	message.setFrom(sendFrom);
-	message.setTo(InternetAddress.parse("seetharamaiah.kondapaneni@bms.com"));
+	message.setTo(InternetAddress.parse("seetharamaiah.kondapaneni@*****.com"));
 
 	message.setText("emailContent", true);
 
